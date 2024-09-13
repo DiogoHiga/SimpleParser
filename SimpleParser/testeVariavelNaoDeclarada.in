@@ -1,0 +1,7 @@
+programa testeVariavelNaoDeclarada {
+    declare number a;
+
+    leia(a);
+    leia(x);
+}
+fimprog

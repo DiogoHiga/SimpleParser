@@ -1,0 +1,28 @@
+programa testeComandos {
+    declare number x, y;
+    
+    escreva("Insira um valor para x: ");
+    leia(x);
+
+    y := x + 10;
+    escreva("O valor de y eh: ");
+    escreva(y);
+    
+    se(x > 5) entao {
+        escreva("x eh maior que 5");
+    } senao {
+        escreva("x eh menor ou igual a 5");
+    }
+
+    enquanto(y < 20) {
+        y := y + 1;
+        escreva("Dentro do while");
+        escreva(y);
+    }
+    execute {
+        escreva("Dentro do do-while");
+        y := y - 1;
+        escreva(y);
+    } enquanto(y > 15);
+}
+fimprog

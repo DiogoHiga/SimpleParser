@@ -1,0 +1,7 @@
+programa testeErrosLexicos {
+    declare number 1x;
+    leia(x);
+    escreva(x);
+    x := 3a5;
+}
+fimprog

@@ -1,0 +1,8 @@
+programa testeVariavelNaoUtilizada {
+    declare number x;
+    declare number y;
+
+    x := 10;
+    escreva(x);
+}
+fimprog

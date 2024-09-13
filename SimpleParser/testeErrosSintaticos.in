@@ -1,0 +1,7 @@
+programa testeErrosSintaticos {
+    declare number x;
+    x := 10
+
+    escreva(x);
+}
+fimprog
