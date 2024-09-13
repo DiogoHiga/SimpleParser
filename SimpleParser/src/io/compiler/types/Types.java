@@ -1,8 +1,9 @@
 package io.compiler.types;
 
 public enum Types {
-    NUMBER(1),
-    TEXT(2);
+    REAL(1),
+    NUMBER(2),
+    TEXT(3);
 
     private int value;
 

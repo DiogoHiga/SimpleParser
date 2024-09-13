@@ -55,7 +55,11 @@ public class Program {
             else if(var.getType() == Types.TEXT) {
                 sb.append("        String ");
             }
+            else if(var.getType() == Types.REAL) {
+                sb.append("        double ");
+            }
             sb.append(var.getId() + ";\n");
+            
         }
         sb.append("\n");
         for(Command cmd : commandList) {

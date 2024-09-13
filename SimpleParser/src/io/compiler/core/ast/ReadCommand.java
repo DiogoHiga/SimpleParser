@@ -23,7 +23,20 @@ public class ReadCommand extends Command{
     
     @Override
     public String generateTarget() {
-        return var.getId() + " = " + ((var.getType() == Types.NUMBER)?"_scTrx.nextInt();\n":"_scTrx.nextLine();\n");
+        StringBuilder sb = new StringBuilder();
+        sb.append(var.getId() + "=");
+        if(var.getType() == Types.NUMBER) {
+            sb.append("_scTrx.nextInt();\n");
+        }
+        else if(var.getType() == Types.TEXT) {
+            sb.append("_scTrx.nextLine();\n");
+        }
+        else if(var.getType() == Types.REAL) {
+            sb.append("_scTrx.nextDouble();\n");
+        }
+
+
+        return sb.toString();
     }
 
 }

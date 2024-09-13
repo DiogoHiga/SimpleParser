@@ -2,15 +2,15 @@
 
 UFABCGrammar é uma gramática ANTLR4 projetada para um ambiente de programação customizado. Esta gramática permite:
 
-- **Declaração de variáveis**: Suporte para variáveis dos tipos `NUMBER` e `TEXT`.
-- **Comandos de controle**: Inclusão de estruturas de controle como `if`, `while` e `do-while`.
+- **Declaração de variáveis**: Suporte para variáveis dos tipos `NUMBER`(podendo ser real) e `TEXT`.
+- **Comandos de controle**: Inclusão de estruturas de controle como `if/else`, `while` e `do-while`.
 - **Comandos básicos**: Suporte para comandos de leitura (`leia`), escrita (`escreva`) e atribuição (`:=`).
 - **Expressões aritméticas e lógicas**: Combinando operadores aritméticos (`+`, `-`, `*`, `/`) e operadores relacionais e lógicos.
 
 ## Funcionalidades
 
 - **Tabela de Símbolos**: Gerencia a declaração e uso de variáveis, garantindo que todas as variáveis sejam usadas corretamente e exibindo avisos para variáveis não usadas.
-- **Análise Semântica**: Verifica erros semânticos como variáveis não declaradas ou não inicializadas.
+- **Análise Semântica**: Verifica erros semânticos como variáveis não declaradas, não inicializadas e conferência de tipos.
 - **Expressões**: Suporte a expressões matemáticas e lógicas.
 
 ## Como Usar

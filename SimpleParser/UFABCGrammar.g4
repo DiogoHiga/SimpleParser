@@ -72,7 +72,11 @@ programa    :   'programa' ID   { program.setName(_input.LT(-1).getText());
             ;
 
 declara     :   'declare' { currentDecl.clear(); }
-                ('number' { currentType = Types.NUMBER; } |'text' { currentType = Types.TEXT; } )
+                ('number' { currentType = Types.NUMBER; } 
+                |
+                'text' { currentType = Types.TEXT; } 
+                |
+                'real' { currentType = Types.REAL; })
                 ID { currentDecl.add(new Var(_input.LT(-1).getText())); }
                 (',' ID { currentDecl.add(new Var(_input.LT(-1).getText())); } )* 
                 {updateTypes();}
@@ -206,7 +210,7 @@ cmdDoWhile  :   'execute'   { stack.push(new ArrayList<Command>());
                 AC
                 cmd+
                 FC  { currentDoWhileCommand.setTrueList(stack.pop()); }
-                'enquanto' { str = ""; }
+                'enquanto' { strExpr = ""; }
                 AP
                 expr
                 OP_REL { strExpr += " " + _input.LT(-1).getText() + " "; }
@@ -283,7 +287,8 @@ OP_LOG      :    '&&'|'||'|'!'|'^'
 TXT         :   '"' (~["\r\n])* '"'
             ;
 
-NUM         :   [0-9]+ ('.' [0-9]+)?
+NUM         :   [0-9]+ 
+                ('.' [0-9]+)? 
             ;
 
 ID          :   ([a-z] | [A-Z]) ([a-z] | [A-Z] | [0-9])*

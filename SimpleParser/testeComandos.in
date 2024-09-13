@@ -1,10 +1,10 @@
 programa testeComandos {
-    declare number x, y;
-    
+    declare real x, y;
+
     escreva("Insira um valor para x: ");
     leia(x);
 
-    y := x + 10;
+    y := x + 10.5;
     escreva("O valor de y eh: ");
     escreva(y);
     

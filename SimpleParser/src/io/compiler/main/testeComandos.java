@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class testeComandos {
     public static void main(String args[]) {
     Scanner _scTrx = new Scanner(System.in);
-        int x;
-        int y;
+        double x;
+        double y;
 
         System.out.println("Insira um valor para x: ");
-        x = _scTrx.nextInt();
-        y = x + 10;
+        x=_scTrx.nextDouble();
+        y = x + 10.5;
         System.out.println("O valor de y eh: ");
         System.out.println(y);
         if (x > 5) {
