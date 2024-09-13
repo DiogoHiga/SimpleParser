@@ -30,5 +30,5 @@ UFABCGrammar é uma gramática ANTLR4 projetada para um ambiente de programaçã
 
 ## Exemplo de Uso
 
-    - No diretorio io\compiler\main, existe o arquivo MainClass.java. Executando ele é possível inserir o nome do arquivo de INPUT (escrito na UFABCGrammar), via terminal, para geração do código correspondente em Java.
-    - Durante a geração do código, haverá a verificação de variaveis não declaradas, não inicializadas, não utilizadas e também conferencia de tipos.
+- No diretorio io\compiler\main, existe o arquivo MainClass.java. Executando ele é possível inserir o nome do arquivo de INPUT (escrito na UFABCGrammar), via terminal, para geração do código correspondente em Java.
+- Durante a geração do código, haverá a verificação de variaveis não declaradas, não inicializadas, não utilizadas e também conferencia de tipos.
