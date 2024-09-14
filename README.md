@@ -1,5 +1,8 @@
 # UFABCGrammar
 
+Diogo Sadao Higa Teixeira Correia
+RA: 11202130504
+
 UFABCGrammar é uma gramática ANTLR4 projetada para um ambiente de programação customizado. Esta gramática permite:
 
 - **Declaração de variáveis**: Suporte para variáveis dos tipos `NUMBER`, `REAL` e `TEXT`.
