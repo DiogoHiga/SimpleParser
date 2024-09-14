@@ -1,5 +1,9 @@
 programa testeComandos {
     declare real x, y;
+    declare text nome;
+
+    nome := "Diogo";
+    escreva(nome);
 
     escreva("Insira um valor para x: ");
     leia(x);
@@ -14,11 +18,12 @@ programa testeComandos {
         escreva("x eh menor ou igual a 5");
     }
 
-    enquanto(y < 20) {
+    enquanto(y < 20 && y > 0) {
         y := y + 1;
         escreva("Dentro do while");
         escreva(y);
     }
+
     execute {
         escreva("Dentro do do-while");
         y := y - 1;
